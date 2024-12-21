@@ -6,9 +6,9 @@ type Person struct {
 }
 
 // We will be modifying this later
-func UpdateNameByValue(p Person, newName string) Person{
-	p.Name = newName
-	return p
+func UpdateNameByValue(p Person, newName string) Person {
+    p.Name = newName
+    return p
 }
 
 func UpdateNameByReference(p *Person, newName string) {
