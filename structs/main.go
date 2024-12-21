@@ -1,11 +1,23 @@
 package main
 
+type Person struct {
+	Name string
+	Employed bool
+}
+
 // We will be modifying this later
-func UpdateNameByValue() {}
+func UpdateNameByValue(user Person, newName string) Person{
+	user.Name = newName
+	return user
+}
 
-func UpdateNameByReference() {}
+func UpdateNameByReference(user *Person, newName string) {
+	user.Name = newName
+}
 
-func MakePersonEmployed() {}
+func MakePersonEmployed(user *Person, employed bool) {
+	user.Employed = employed
+}
 
 // Where we will run our code
 func main() {}
