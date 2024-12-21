@@ -29,7 +29,7 @@ func PopSliceValue(sl []string) []string{
 
 // Where we will run our code
 func main() {
-		originalSlice := CreateSlice() // Create the initial slice
+	originalSlice := CreateSlice() // Create the initial slice
         modifiedSlice := ModifySlice(originalSlice) // Create a modified copy
 
         fmt.Println("Original Slice:", originalSlice)  // Output: [dog cat monkey]
