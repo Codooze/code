@@ -6,17 +6,17 @@ type Person struct {
 }
 
 // We will be modifying this later
-func UpdateNameByValue(user Person, newName string) Person{
-	user.Name = newName
-	return user
+func UpdateNameByValue(p Person, newName string) Person{
+	p.Name = newName
+	return p
 }
 
-func UpdateNameByReference(user *Person, newName string) {
-	user.Name = newName
+func UpdateNameByReference(p *Person, newName string) {
+	p.Name = newName
 }
 
-func MakePersonEmployed(user *Person) {
-	user.Employed = true
+func MakePersonEmployed(p *Person) {
+	p.Employed = true
 }
 
 // Where we will run our code
