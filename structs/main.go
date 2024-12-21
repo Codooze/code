@@ -15,8 +15,8 @@ func UpdateNameByReference(user *Person, newName string) {
 	user.Name = newName
 }
 
-func MakePersonEmployed(user *Person, employed bool) {
-	user.Employed = employed
+func MakePersonEmployed(user *Person) {
+	user.Employed = true
 }
 
 // Where we will run our code
